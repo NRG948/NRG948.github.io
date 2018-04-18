@@ -4,7 +4,7 @@ body {
 	font-family: 'Arial', serif;
 }
 .nav {
-	background-color: #ff0000;
+	background-color: #ff3030;
 	color: #ffffff;
 	list-style: none;
 	text-align: center;
@@ -16,7 +16,8 @@ body {
 }
 .nav > li > a {
 	text-decoration: none;
-	color: #ffffff;
+	color: #ffd700;
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 .nav > li > a:hover {
 	color: #clclcl;
