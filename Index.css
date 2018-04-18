@@ -1,0 +1,63 @@
+
+	@font-face{
+		font-family: Hewitt; 
+		src: url("font/cooperhewitt-light.otf"); 
+	}
+	
+	img {
+		margin-top: 20%;
+	}
+	
+	* {
+		font-family: Hewitt;
+	} 
+	
+   /*
+   .tab button:hover {
+		background-color: #ddd;
+	}
+    .tab {
+		overflow: hidden;
+		border: 2px solid #ffffff;
+		background-color: #f1f1f1;
+    }
+    .tablinks{
+        font-size:150%
+    }
+    .tab button.active {
+		background-color: #ccc;
+    }
+    .tab button {
+		background-color: inherit;
+		float: right;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 28px 32px;
+		transition: 0.7s;
+    }
+	*/ 
+	
+	.header {
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 4em;
+		text-align: center;
+		margin-top: 15%;
+	}
+
+	body {
+		background-image: url("img/test.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.logo {
+		text-align: center;
+		margin-top: 16%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
