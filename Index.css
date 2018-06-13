@@ -1,14 +1,39 @@
+@font-face{
+		font-family: Hewitt;
+		src: url("font/cooperhewitt-light.otf");
+}
+@font-face{
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+    background-image: url("img/test.jpg");
+		background-attachment: fixed;
+        
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+        height: 50%;
+        
 }
 .nav {
-	background-color: #ff3030;
+
+	background-color: #ffffff;
+    
+    opacity: 1;
 	color: #ffffff;
-	list-style: none;
+
+	/*list-style: none; */
 	text-align: center;
-	padding: 20px 0 20px 0;
+	padding: 20px 0px 20px 0px;
+    font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
 }
 .nav > li {
 	display: inline-block;
@@ -16,10 +41,35 @@ body {
 }
 .nav > li > a {
 	text-decoration: none;
-	color: #ffd700;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	color: #fdad13;
+/*	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
 	font-size: 20px;
+    font-weight: bold;
 }
 .nav > li > a:hover {
 	color: #clclcl;
+}
+
+	
+	img {
+		margin-top: 20%;
+}
+.header {
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 4em;
+		text-align: center;
+		margin-top: 15%;
+    
+	}
+	.logo {
+		text-align: center;
+		margin-top: 16%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+.whitespace{
+    background-color: #ffffff;
+    padding: 20px 0px 20px 0px;
+    margin-top: 0;
+    
 }
