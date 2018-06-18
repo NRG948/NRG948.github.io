@@ -17,6 +17,7 @@ body {
 		background-position: center;
 		background-size: cover;
         height: 50%;
+    background-blend-mode: color;
 
 }
 .nav {
@@ -38,7 +39,7 @@ body {
 .nav > li {
 	display: inline-block;
 	padding: 0 25px 0 25px;
-}
+} 
 .nav > li > a {
 	text-decoration: none;
 	color: #fdad13;
@@ -49,14 +50,17 @@ body {
 .nav > li > a:hover {
 	color: #clclcl;
 }
-#firsttest {
+.firsttest {
 	background-color: #ffffff;
-	padding-top: 100px;
+	padding-top: 105px;
+}
+.text{
+    background-color:#ffffff; 
 }
 
 
 	img {
-		margin-top: 20%;
+		margin-top:5px;
 }
 .header {
 		height: 100%;
@@ -79,4 +83,20 @@ body {
     padding: 20px 0px 20px 0px;
     margin-top: 0;
 
+}
+fig{
+    width:100px;
+    overflow: hidden;
+    margin:0;
+}
+
+imgdiv img {
+    display: run-in;
+    width:30%;
+}
+
+imgdiv:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
