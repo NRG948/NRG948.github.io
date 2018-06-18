@@ -16,7 +16,7 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-        height: 50%;
+        height: 71vh;
     background-blend-mode: color;
 
 }
@@ -48,19 +48,14 @@ body {
     font-weight: bold;
 }
 .nav > li > a:hover {
-	color: #clclcl;
+	color: #d5401b;
 }
 .firsttest {
 	background-color: #ffffff;
-	padding-top: 105px;
+	padding-top: 0px;
 }
 .text{
     background-color:#ffffff; 
-}
-
-
-	img {
-		margin-top:5px;
 }
 .header {
 		height: 100%;
@@ -96,7 +91,8 @@ imgdiv img {
 }
 
 imgdiv:after {
-    content: '';
-    display: inline-block;
+    
+    display: grid;
     width: 100%;
 }
+
