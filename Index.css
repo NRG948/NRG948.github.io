@@ -52,7 +52,7 @@ body {
 }
 .firsttest {
 	background-color: #ffffff;
-	padding-top: 0px;
+	
 }
 .text{
     background-color:#ffffff; 
@@ -75,24 +75,23 @@ body {
 	}
 .whitespace{
     background-color: #ffffff;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 50px 0px;
     margin-top: 0;
+    border-bottom-color: white;
 
 }
-fig{
-    width:100px;
-    overflow: hidden;
-    margin:0;
-}
+
 
 imgdiv img {
     display: run-in;
     width:30%;
 }
 
+
 imgdiv:after {
+    display:block;
     
-    display: grid;
     width: 100%;
 }
+
 

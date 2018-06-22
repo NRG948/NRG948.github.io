@@ -106,55 +106,62 @@
 </ul>
 
 <body>
-    <container>
+
     <div class="header" style="height: 100%; display:grid;">
         <h1>Newport Robotics Group</h1>
     </div>
-        </container>
-
-   
+      
     <div class="firsttest" id="sponsors" style="height: 100%; display: grid;">
         
         <h2 style ="text-align:center;font-family: Hewitt;font-size:50px;" >Sponsors</h2>
         <imgdiv>
             <a href="https://www.microsoft.com/en-us/philanthropies/default.aspx" target="_blank">
-      <img src='img/microsoft_logo.png' style="float:left;margin-left:1%;">
+      <img src='img/microsoft_logo.png' style="float:left;margin-left:1%;" alt="Microsoft">
                 </a>
             <a href="http://google.org" target="_blank">
-        <img src='img/google_logo.png' style="align:middle; margin-left:4.25%;margin-right: 4.25%;">
+        <img src='img/google_logo.png' style="align:middle; margin-left:4.25%;margin-right: 4.25%;" alt="Google">
                 </a>
             <a href="http://www.intellectualventures.com/" target="_blank">
-        <img src='img/IntellectualV_logo.jpg' style="float:right;">
+        <img src='img/IntellectualV_logo.jpg' style="float:right;" alt="Intellecutal Ventures">
                 </a>
-            
+        </imgdiv>
+         <imgdiv style="margin-top: 1%;margin-bottom: 5%;">
+         <!---  Temp HTC Website and logo, need to ask Business for real one --->
+        <a href="http://blog.htc.com" target="_blank">
+      <img src='img/htcvive_logo_temp.png' style="float:left;margin-left:1%;" alt="HTC">
+                </a>
+            <a href="https://f5.com/about-us/corporate-social-responsibility" target="_blank">
+      <img src='img/f5_logo.png' style="align:middle; margin-left:4.25%;margin-right: 4.25%; width: 10%" alt="F5 Networks">
+                </a>
+            <a href="http://www.factoriaortho.com" target="_blank">
+        <img src='img/fidler_logo.jpeg' style="width:9%;" alt="Dr. Brett Fidler">
+                </a>
+            <a href="http://www.mjrdevelopment.com/" target="_blank">
+        <img src='img/mjr_logo.png' style="width:15%;" alt="MJR Development">
+                </a>
+        <img src='img/quick_logo.jpg' style="width:24%; float: right;" alt="Quick Family Foundation">
+        </imgdiv> 
+        <imgdiv style="margin-top: 0%; background-color: #ffffff;">
+            <a href="https://www.firstwa.org/" target="_blank">
+      <img src='img/FirstWashington_logo.png' style="float:left;margin-left:1%;" alt="First Washington">
+                </a>
+            <a href="https://www.xerox.com/corporate-citizenship/2017/community-involvement/xerox-foundation.html" target="_blank">
+      <img src='img/xerox_logo.png' style="align:middle; margin-left:4.25%;margin-right: 4.25%;" alt="Xerox">
+                </a>
+            <a href="https://www.boeing.com/principles/community-engagement.page" target="_blank">
+        <img src='img/boeing_logo.png' style="float:right;" alt="Boeing">
+                </a>
             </imgdiv>
-      <h1 style="display:contents"> Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</h1>
+      <h1 class="whitespace" style="display: flex; margin-bottom: 0px"> Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</h1>
+        <img src="img/27590167508_918feb01bc_o.jpg" style="width: 100%; display: grid;"> 
     </div>
-    
-    <img src="img/27590167508_918feb01bc_o.jpg" style="width: 100%; max-height: 500px;">
    
+    
          
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
-    <script>
-        lp.jQuery(function($) {
 
-            // The speed of the scroll in milliseconds
-            var speed = 1000;
-
-            // Find links that are #anchors and scroll to them
-            $('a[href^=#]')
-                .not('.lp-pom-form .lp-pom-button')
-                .unbind('click.smoothScroll')
-                .bind('click.smoothScroll', function(event) {
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: $($(this).attr('href')).offset().top
-                    }, speed);
-                });
-        });
-    </script>
     <script>
     $(function() {
       $('a[href*=#]:not([href=#])').click(function() {
