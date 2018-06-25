@@ -23,25 +23,29 @@ body {
 
 .sidenav {
     height: 100%;
-    width: 150px;
+    width: 18%;
     position: fixed;
+    max-width: 150px;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #f21d09;
+    word-wrap: break-word;
     overflow-x: hidden;
 		font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
-    padding-top: 120px;
+    padding-top: 15%;
 }
 
 .sidenav a {
     padding: 6px 8px 6px 8px;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 100%;
 		color: #fdad13;
 		border-bottom: 1px solid #ddd;
 		margin-bottom: 6px;
+    margin-top: 0;
     display: block;
+    position:relative;
 }
 
 .sidenav img {
@@ -65,7 +69,8 @@ body {
     font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 82%;
+    margin-left: 18vh;
     margin-top: 0;
 }
 .nav > li {
