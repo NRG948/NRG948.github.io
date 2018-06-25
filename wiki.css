@@ -29,11 +29,12 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+		resize: both;
     background-color: #f21d09;
     word-wrap: break-word;
     overflow-x: hidden;
 		font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
-    padding-top: 10%;
+    padding-top: 120px;
 }
 
 .sidenav a {
