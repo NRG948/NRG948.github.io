@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--- Color Scheme for our Wiki needs to be decided --->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>NRG Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/wiki_logo.png">
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+    
+<ul class="nav" style="padding-left: 10%;">
+    <li><a href="#docs">Robot Docs</a></li>
+    <li><a href="#git">Github</a></li>
+    <li><a href="#scout">Scouting</a></li>
+    <li><a href="#MV">Machine Vision</a></li>
+    <li><a href="#swerve">Swerve Drive</a></li>
+    <li><a href="#comm">Community (Could be addded to mainPage)</a></li>
+</ul>
+    <a href="wiki.html"><img style="width: 10%; position: fixed; top: 0;" src="img/nrglogo.png"></a> 
+    <body>
+    <h1 style= "text-align: center; margin-top: 15%">Using This Page</h1>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "docs.html" style="color:black;">Robot Documentation</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+           Explore our robot code's evolution and design from this and previous years. Learn about our different failures and successes and how we overcame/enchanced each problem. Observe the evolution of our design with GIFs for multiple robot parts. Download copies of our CADs and tinker with their different parts.
+            * CAD and Programming Joint Effort*
+        </h3>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "git.html" style="color:black;">Git</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+          *Explore* our different projects from the scouting app to our ML based tracking. Download the final product and spread it to other robotics teams *lol edits needed*
+        </h3>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "scouting.html" style="color:black;">Scouting App for iOS and Android</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+          *IT ppl need to add stuff*
+        </h3>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "MV.html" style="color:black;">Machine Vision for Robot</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+          *Sourish will explain*
+        </h3>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "swerve.html" style="color:black;">Swerve Drive Summer Project</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+          *Designs, evolution* , *by summer proj. participants*
+        </h3>
+        <h2 style="margin-left: 7%;text-decoration: underline"><a href = "comm.html" style="color:black;">Community Contributions</a>
+        </h2>
+        <h3 style="margin: 1% 1% 0% 2%">
+          What Have we done to help our area - Business team
+        </h3>
+        
+    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="smoothscroll.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });</script>
+    </body>
+</html>

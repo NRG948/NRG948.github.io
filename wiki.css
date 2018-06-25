@@ -1,0 +1,97 @@
+@font-face{
+		font-family: Hewitt;
+		src: url("font/cooperhewitt-light.otf");
+}
+@font-face{
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+    background-color: white;
+		background-attachment: fixed;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+        height: 71vh;
+    background-blend-mode: color;
+
+}
+.nav {
+
+	background-color: #ffffff;
+
+    opacity: 1;
+	color: #ffffff;
+
+	/*list-style: none; */
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+    font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    float: right;
+    margin-top: 0;
+}
+.nav > li {
+	display: inline-block;
+	padding: 0% 2% 0% 2%;
+} 
+.nav > li > a {
+	text-decoration: none;
+	color: black;
+/*	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
+	font-size: 20px;
+    font-weight: bold;
+}
+.nav > li > a:hover {
+	color: #d5401b;
+}
+.firsttest {
+	background-color: #ffffff;
+	
+}
+.text{
+    background-color:#ffffff; 
+}
+.header {
+		height: 100%;
+ 		width: 100%;
+		padding-bottom: 140px;
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 4em;
+		text-align: center;
+		margin-top: 15%;
+
+	}
+	.logo {
+		text-align: center;
+		margin-top: 16%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+.whitespace{
+    background-color: #ffffff;
+    padding: 20px 0px 50px 0px;
+    margin-top: 0;
+    border-bottom-color: white;
+}
+
+
+imgdiv img {
+    display: run-in;
+    width:30%;
+}
+
+
+imgdiv:after {
+    display:block;
+    
+    width: 100%;
+}
+
+
