@@ -20,6 +20,38 @@ body {
     background-blend-mode: color;
 
 }
+
+.sidenav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f21d09;
+    overflow-x: hidden;
+		font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
+    padding-top: 120px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 19px;
+		color: #fdad13;
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 6px;
+    display: block;
+}
+
+.sidenav img {
+		padding-bottom: 20px;
+}
+.main {
+    margin-left: 150px;
+    font-size: 23px;
+}
+
 .nav {
 
 	background-color: #ffffff;
@@ -33,17 +65,16 @@ body {
     font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
     position: fixed;
     top: 0;
-    width: 90%;
-    float: right;
+    width: 100%;
     margin-top: 0;
 }
 .nav > li {
 	display: inline-block;
-	padding: 0% 2% 0% 2%;
-} 
+	padding: 0 25px 0 25px;
+}
 .nav > li > a {
 	text-decoration: none;
-	color: black;
+	color: #fdad13;
 /*	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
 	font-size: 20px;
     font-weight: bold;
@@ -51,12 +82,17 @@ body {
 .nav > li > a:hover {
 	color: #d5401b;
 }
+
 .firsttest {
 	background-color: #ffffff;
-	
+
+}
+.firsttest {
+	background-color: #ffffff;
+
 }
 .text{
-    background-color:#ffffff; 
+    background-color:#ffffff;
 }
 .header {
 		height: 100%;
@@ -90,8 +126,6 @@ imgdiv img {
 
 imgdiv:after {
     display:block;
-    
+
     width: 100%;
 }
-
-
