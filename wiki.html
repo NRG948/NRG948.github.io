@@ -3,6 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="index.css">
+     <link rel="stylesheet" type="text/css" href="imported.css">
     <title>NRG Wiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/wiki_logo.png">
@@ -11,15 +12,6 @@
 </head>
 
 <!--
-<ul class="nav" style="padding-left: 10%;">
-    <li><a href="#docs">Robot Docs</a></li>
-    <li><a href="#git">Github</a></li>
-    <li><a href="#scout">Scouting</a></li>
-    <li><a href="#MV">Machine Vision</a></li>
-    <li><a href="#swerve">Swerve Drive</a></li>
-    <li><a href="#comm">Community (Could be addded to mainPage)</a></li>
-</ul>
--->
 <div style="width: 18%; max-width: 150px;">
     <a id="wiki" class="whitespace" style="color: white">k</a>
     </div>
@@ -29,16 +21,36 @@
     <li><a href="index.html#sponsors">Sponsors</a></li>
     <li><a href="index.html#photos">Photos</a></li>
     <li><a href="wiki.html">Wiki</a></li>
-  <!---  <li><a href="#other">Other</a></li> --->
+    <li><a href="#other">Other</a></li> 
 </ul>
    
+-->
+<div class= "sidebar background card-layout sidebar-move-left sidebar-move-right" style="width:200px;z-index:2;" id="wikiSidebar">
+  <button onclick="sidebar_close()" class="close-sidebar hide-sidebar" style="font-size: 18px;">Close x</button>
+  <h5 class="close-sidebar hide-medium hide-small">Menu</h5>
+<a class="close-sidebar side-button" href="index.html"><img style="width: 75%; max-width: 125px;top: 0; margin-bottom: 0;" src="img/nrglogo.png"></a>    
+  <a class="close-sidebar side-button buttonsize" href="javascript:void(0)">Link 1</a>
+  <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Link 2</a>
+  <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Link 3</a>
+  <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Link 4</a>
     
+</div>
+
+<div class="main" id="Content">
+
+<div class="head">
+  <button class="headbutton head w3-xlarge sidebar-move-left" onclick="sidebar_open()">&#9776;</button>
+  <div class="w3-container">
+    <h2 style="color: #ffffff;">NRG 948 Wiki</h2>
+  </div>
+</div>
 
     <body>
         
+<!--
       <div class="sidenav">
-       <!--- <a href="index.html"><img style="width: 10%; position: fixed; top: 0;" src="img/nrglogo.png"></a>
-        <a href="#Robotdocs">Robot Documentation</a> --->
+       <a href="index.html"><img style="width: 10%; position: fixed; top: 0;" src="img/nrglogo.png"></a>
+        <a href="#Robotdocs">Robot Documentation</a> 
           <a href="index.html"><img style="width: 15%; max-width: 125px; position: fixed; top: 0; margin-bottom: 0;" src="img/nrglogo.png"></a>
         <a href="#git">Git</a>
         <a href="#scouting">Scouting App for iOS and Android</a>
@@ -46,17 +58,12 @@
         <a href="swerve">Swerve Drive Summer Project</a>
         <a href="#community">Community Contributions</a>
       </div>
+-->
 
       
 
-      <div class = "main">
-        <h1 style= "text-align: center; margin-top: 10vh;">Using This Page</h1>
-          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "docs.html" style="color:black;">Robot Documentation</a>
-          </h2>
-          <h3 style="margin: 1% 1% 0% 2%">
-            Explore our robot code's evolution and design from this and previous years. Learn about our different failures and successes and how we overcame/enchanced each problem. Observe the evolution of our design with GIFs for multiple robot parts. Download copies of our CADs and tinker with their different parts.
-            * CAD and Programming Joint Effort*
-          </h3>
+      <div>
+        <h1 style= "text-align: center; margin-top 2%;">Using This Page</h1>
           <h2 style="margin-left: 7%;text-decoration: underline"><a href = "git.html" style="color:black;">Git</a>
           </h2>
           <h3 style="margin: 1% 1% 0% 2%">
@@ -83,7 +90,7 @@
             What Have we done to help our area - Business team
           </h3>
       </div>
-
+        </div>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
@@ -103,5 +110,15 @@
       });
     });
     </script>
+        <script>
+function sidebar_open() {
+    document.getElementById("wikiSidebar").style.display = "block";
+}
+function sidebar_close() {
+    document.getElementById("wikiSidebar").style.display = "none";
+    document.getElementById("Content").style.marginLeft = 0;
+    
+}
+</script>
     </body>
-</html>
+    </html>

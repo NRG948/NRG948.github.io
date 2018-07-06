@@ -21,6 +21,7 @@ body {
 
 }
 
+/*
 .sidenav {
     height: 100%;
     width: 18%;
@@ -48,12 +49,13 @@ body {
     display: block;
     position:relative;
 }
+*/
 
 .sidenav img {
 		padding-bottom: 20px;
 }
 .main {
-    margin-left: 150px;
+    margin-left: 10px;
     font-size: 23px;
 }
 
@@ -134,4 +136,114 @@ imgdiv:after {
     display:block;
 
     width: 100%;
+}
+.head{
+    background-color: #f21d09;
+}
+.headbutton{
+    color: #ffffff;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+headbutton a{
+    color: black;
+}
+.sidenav-item{width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:left;
+    outline:0;
+    text-align:center;
+    width:auto;
+    white-space:normal;}
+.buttonsize{
+    font-size: 20px
+}
+.close-sidebar{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border: none;
+    display:block;
+    outline:0;
+}
+.side-button{
+    width:100%;
+    text-decoration: none;
+}
+@media (max-width:992px){
+    .hide-medium{
+        display:none!important;
+    }
+}
+
+@media (min-width:993px){.hide-large {display:none!important}.sidebar{display:block!important}}
+
+@media (min-width:993px){.hide-sidebar{display: none}}
+
+@media (min-width:0) and (max-width:993px){.sidebar{display: none}}
+
+
+@media (max-width:992px){.main{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
+
+
+    @media (min-width:993px){.main {
+    margin-left: 200px;
+        }
+}
+.main{
+    transition:margin-left .4s;
+}
+.sidebar{
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    display: block;
+    overflow:auto}
+.sideblock{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+}
+
+.background{
+    color:#000!important;
+    background-color:#fff!important;
+}
+
+.card-layout{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+@media (min-width:992px){.sidebar-move-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}}
+
+.sidebar-move-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+div > a:hover{
+    background-color: grey;
+}
+
+.headbutton:hover{
+    background-color: grey;
 }
