@@ -203,13 +203,14 @@ headbutton a{
 
 @media (min-width:993px){
     .hide-large {
-        display:none
+        display:none;
     }
     .sidebar{
-        display:block
+        display:block;
+        transition: margin-left .4s;
     }
     .hide-sidebar{
-        display: none
+        display: none;
     }
     .main {
     margin-left: 200px;
@@ -279,7 +280,7 @@ headbutton a{
 
 .sidebar-move-left{
         position:relative;
-        animation:animateleft 0.4s
+        animation:animateleft 0.4s;
     }
     @keyframes animateleft{
         from{

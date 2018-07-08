@@ -93,5 +93,18 @@ imgdiv:after {
     
     width: 100%;
 }
-
+.NRG{
+    font-size: 15vh;
+    vertical-align: middle;
+}
+@media screen and (min-width: 900px) {
+  .NRG {
+     font-size: 135px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .NRG {
+     font-size: 25vw;;
+  }
+}
 
