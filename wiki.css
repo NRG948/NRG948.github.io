@@ -156,7 +156,8 @@ imgdiv:after {
 headbutton a{
     color: black;
 }
-.sidenav-item{width:100%;
+.sidenav-item{
+    width:100%;
     display:block;
     padding:8px 16px;
     text-align:left;
@@ -166,10 +167,13 @@ headbutton a{
     outline:0;
     text-align:center;
     width:auto;
-    white-space:normal;}
-.buttonsize{
-    font-size: 20px
+    white-space:normal;
 }
+
+.buttonsize{
+    font-size: 20px;
+}
+
 .close-sidebar{
     padding:8px 16px;
     float:left;
@@ -178,34 +182,68 @@ headbutton a{
     display:block;
     outline:0;
 }
+
 .side-button{
     width:100%;
     text-decoration: none;
 }
+
 @media (max-width:992px){
     .hide-medium{
         display:none!important;
     }
+    .sidebar{
+        display:none
+    }
+    .main{
+        margin-left:0!important;
+        margin-right:0!important
+    }
 }
 
-@media (min-width:993px){.hide-large {display:none!important}.sidebar{display:block!important}}
+@media (min-width:993px){
+    .hide-large {
+        display:none
+    }
+    .sidebar{
+        display:block
+    }
+    .hide-sidebar{
+        display: none
+    }
+    .main {
+    margin-left: 200px;
+        }
+    .sidebar-move-left{
+        position:relative;
+        animation:animateleft 0.4s
+    }
+    @keyframes animateleft{
+        from{
+            left:-300px;
+            opacity:0;
+        } 
+        to
+        {
+            left:0;
+            opacity:1;
+        }
+    }
+    .main{
+    transition:margin-left .4s;
+    }
+}
 
-@media (min-width:993px){.hide-sidebar{display: none}}
-
-@media (min-width:0) and (max-width:993px){.sidebar{display: none}}
 
 
+/*
 @media (max-width:992px){.main{
     margin-left:0px;
     margin-right:0px;
     }
 }
+*/
 
-
-    @media (min-width:993px){.main {
-    margin-left: 200px;
-        }
-}
 .main{
     transition:margin-left .4s;
 }
@@ -216,7 +254,9 @@ headbutton a{
     position:fixed!important;
     z-index:1;
     display: block;
-    overflow:auto}
+    overflow:auto;
+}
+
 .sideblock{
     width:100%;
     display:block;
@@ -234,11 +274,24 @@ headbutton a{
 }
 
 .card-layout{
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
-@media (min-width:992px){.sidebar-move-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}}
 
-.sidebar-move-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.sidebar-move-left{
+        position:relative;
+        animation:animateleft 0.4s
+    }
+    @keyframes animateleft{
+        from{
+            left:-300px;
+            opacity:0;
+        } 
+        to
+        {
+            left:0;
+            opacity:1;
+        }
+    }
 
 div > a:hover{
     background-color: grey;
