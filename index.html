@@ -161,7 +161,7 @@
         <img src="img/27590167508_918feb01bc_o.jpg" style="width: 100%; display: block;"> 
     <h2 class="firsttest" id="photos" style ="text-align:center;font-family: Hewitt;font-size:50px; margin: 0px 0px 0px 0px; padding-top: 5%" >Photos</h2>
         <h1 class="whitespace" style="display: grid; margin-bottom: 0px; text-align: center;">
-           We can do custom cherry picked pics for this or just plop on the Flickr HTML Element with a cherry-picked album (We need to do some research on that part, but the latter should be easier)
+            <div id="flickrembed_1"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a rel="nofollow" href="https://s3.amazonaws.com/workingvouchers/clarks/index.html">https://s3.amazonaws.com/workingvouchers/clarks/index.html</a></div>
         </h1>
         
     </div>  
@@ -184,7 +184,9 @@
         }
       });
     });</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_1&source=flickr&layout=responsive&input=www.flickr.com/photos/nrg948/albums/72157665742389927&sort=0&by=album&theme=slider&scale=fill&limit=20&skin=default-light&autoplay=true'></script><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+
 </body>
 
 <!---

@@ -186,7 +186,9 @@ headbutton a{
 .side-button{
     width:100%;
     text-decoration: none;
+    color: black;
 }
+
 
 @media (max-width:992px){
     .hide-medium{
@@ -197,7 +199,7 @@ headbutton a{
     }
     .main{
         margin-left:0!important;
-        margin-right:0!important
+        margin-right:0!important;
     }
 }
 
@@ -207,7 +209,6 @@ headbutton a{
     }
     .sidebar{
         display:block;
-        transition: margin-left .4s;
     }
     .hide-sidebar{
         display: none;
@@ -300,4 +301,11 @@ div > a:hover{
 
 .headbutton:hover{
     background-color: grey;
+}
+
+.large{
+    font-size: 20px;
+    color:black;
+    margin: 10px 0 5 0;
+    font-weight: normal;
 }
