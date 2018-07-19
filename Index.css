@@ -107,4 +107,30 @@ imgdiv:after {
      font-size: 25vw;;
   }
 }
+  #nav {
+     max-height: 20px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      transition: max-height 0.5s;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+    display: none;
+    }
+  }
+
+}
+/*
+@media screen and (min-width: 357px) {
+  #nav {
+     max-height: 500px;
+      transition: max-height 0.5s;
+      overflow-x: hidden;
+      white-space: normal;
+  }
+}
+*/
+
+/*@media screen and (max-width: 356px) {*/
+
 

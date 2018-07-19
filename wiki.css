@@ -190,12 +190,12 @@ headbutton a{
 }
 
 
-@media (max-width:992px){
+@media screen and (max-width:992px){
     .hide-medium{
         display:none!important;
     }
     .sidebar{
-        display:none
+        display:none;
     }
     .main{
         margin-left:0!important;
@@ -203,22 +203,24 @@ headbutton a{
     }
 }
 
-@media (min-width:993px){
+@media screen and (min-width:993px){
     .hide-large {
         display:none;
     }
     .sidebar{
-        display:block;
+        display:block!important;
     }
     .hide-sidebar{
         display: none;
     }
+/*
     .main {
     margin-left: 200px;
         }
+*/
     .sidebar-move-left{
         position:relative;
-        animation:animateleft 0.4s
+        animation:animateleft 0.4s;
     }
     @keyframes animateleft{
         from{
@@ -231,9 +233,11 @@ headbutton a{
             opacity:1;
         }
     }
+/*
     .main{
     transition:margin-left .4s;
     }
+*/
 }
 
 
