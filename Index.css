@@ -1,25 +1,367 @@
+@font-face{
+		font-family: Hewitt;
+		src: url("font/cooperhewitt-light.otf");
+}
+@font-face{
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
+/*    background-image: url("img/Hbackindex.jpeg");*/
+		background-attachment: fixed;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+        height: 71vh;
+    background-blend-mode: color;
+    overflow-x:hidden;
 }
+/*
+html{
+    overflow-x: hidden;
+}
+*/
 .nav {
-	background-color: #ff3030;
+
+	
+
+    opacity: 1;
 	color: #ffffff;
-	list-style: none;
+
+	/*list-style: none; */
 	text-align: center;
-	padding: 20px 0 20px 0;
+	padding: 20px 0px 20px 0px;
+    font-family: <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">;
+    overflow-x: auto;
+    top: 0;
+    margin-top: 0;    
+/*
+    margin-left: 10%;
+    margin-right: 10%; 
+*/
 }
 .nav > li {
-	display: inline-block;
+	display: inline;
+    overflow-x: auto;
 	padding: 0 25px 0 25px;
-}
+} 
 .nav > li > a {
 	text-decoration: none;
-	color: #ffd700;
-	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	color: #f21d09;
+    overflow-x: auto;
+/*	text-shadow: 1px
+    0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;*/
 	font-size: 20px;
+    font-weight: bold;
 }
 .nav > li > a:hover {
-	color: #clclcl;
+	color: #fdad13;
 }
+.firsttest {
+	background-color: #ffffff;
+    padding: 5px 2px 5px 2px;
+	
+}
+.text{
+    background-color:#ffffff; 
+}
+.header {
+		height: 100%;
+ 		width: 100%;
+		padding-bottom: 140px;
+		color: rgba(253, 173, 19, 1);
+/*            rgba(255, 255, 255, 0.4);*/
+		font-size: 4em;
+		text-align: center;
+		margin-top: 15%;
+
+	}
+	.logo {
+		text-align: center;
+		margin-top: 16%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+.whitespace{
+    background-color: #ffffff;
+    padding: 20px 0px 50px 0px;
+    margin-top: 0;
+    border-bottom-color: white;
+
+}
+
+imgdiv{
+    padding: 5px 5px 5px 5px;
+    margin-top: 0px;
+    display: block;
+}
+imgdiv a {
+    text-decoration: none;
+}
+
+/*
+imgdiv img {
+    display: run-in;
+    width:30%;
+    padding: 1px 2px 1px 2px;
+    min-width: 320px;
+}
+*/
+imgdiv img{
+    display: run-in;
+    vertical-align: top;
+    width:30%;
+    padding: 5px 20px 5px 20px;
+    min-width: 320px;
+    max-width: 400px;
+}
+.small{
+    vertical-align: top;
+    min-width: 105px;
+    max-width: 125px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+imgdiv:after {
+    display:block;
+    
+    width: 100%;
+}
+.NRG{
+    font-size: 15vh;
+    vertical-align: middle;
+}
+@media screen and (min-width: 900px) {
+  .NRG {
+     font-size: 135px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .NRG {
+     font-size: 25vw;;
+  }
+}
+  #nav {
+     max-height: 20px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      
+      transition: max-height 0.5s;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+    display: none;
+    }
+      ::-webkit-scrollbar { 
+    display: none; 
+}
+  }
+
+.topnav{
+    box-shadow: 0px 0px 20px #000000;
+}
+/*
+
+@media screen and (max-width:716px){
+    #nav{
+        overflow-x:scroll;
+        scrollbar{
+            display
+        }
+    }
+}
+*/
+
+/*
+@media screen and (min-width: 357px) {
+  #nav {
+     max-height: 500px;
+      transition: max-height 0.5s;
+      overflow-x: hidden;
+      white-space: normal;
+  }
+}
+*/
+
+/*@media screen and (max-width: 356px) {*/
+
+@media screen and (max-width: 410px){
+    imgdiv img{
+        width: 95%;
+        margin: 0px 0px 0px 0px;
+    }
+    .small {
+        width: 32%;
+        padding: 0px 0px 0px 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .other{
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    imgdiv{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    
+}
+
+@media screen and (max-width:684px){
+    .large-screen-view{
+        display: none;
+    }
+}
+@media screen and (min-width:690px){
+    .small-screen-view{
+        display: none;
+    }
+}
+
+@media screen and (max-width:684px){
+    .bignav{
+        display: none;
+    }
+}
+@media screen and (min-width:690px){
+    .smallnav{
+        display: none;
+    }
+}
+
+.Google{
+    min-width: 280px;
+    max-width: 360px;
+}
+hr{
+    display: block; 
+    width: 100%; 
+    margin:0;
+    padding:15px 0px 15px 0px;
+    border-top: 4px solid #fdad13;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    
+}
+
+
+    .container {
+      height: 100%;
+      
+      position: fixed;
+    }
+
+    .container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: -1;
+      padding: 30px;
+      font-size: 50px;
+      color: white;
+    }
+
+    .container .slide {
+      z-index: -1;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transition: opacity 1s ease-in-out;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+    }
+
+    .container .slide.show {
+      opacity: 1;
+    }
+
+#slides{
+   
+    
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: auto;
+    list-style-type: none;
+}
+.slidetest{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    
+    opacity: 0;
+    
+      -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.showing{
+    opacity: 1;
+    
+}
+#slides > li > img{
+    width: 100%;
+    display: inline-block;
+}
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+.sponsorus{
+    text-decoration: none; 
+    padding: 5px;
+    word-break: keep-all;
+    font-size: 20px;
+    border-radius: 10px; 
+    border-color: red;
+    display:inline-block;
+    outline: red;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+.sponsorus:hover{
+    background-color:#4F4E4F;
+    border-color: #4F4E4F;
+    color: #ffffff;
+}
+
+.footer-col{
+    width: 32%;
+    color: white;
+}
+.footer-col > a{
+    color: white;
+}
+.footer-col > a > img{
+    filter: invert(100%);
+}
+.large-screen-view > .footer-col{
+    font-size: 2vw;
+
+@media screen and (min-width:1000px){
+    .large-screen-view > .footer-col{
+    font-size: 50px;
+}
+}
+
+
+    
+

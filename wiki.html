@@ -1,0 +1,125 @@
+<!DOCTYPE HTML5>
+<!--- Color Scheme for our Wiki needs to be decided --->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+<!--     <link rel="stylesheet" type="text/css" href="imported.css">-->
+    <title>NRG Wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/nrglogo.png">
+    <link rel="stylesheet" type="text/css" href="wiki.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<!--
+<div style="width: 18%; max-width: 150px;">
+    <a id="wiki" class="whitespace" style="color: white">k</a>
+    </div>
+    <ul class="nav">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#aboutus">About Us/Our Mission</a></li>
+    <li><a href="index.html#sponsors">Sponsors</a></li>
+    <li><a href="index.html#photos">Photos</a></li>
+    <li><a href="wiki.html">Wiki</a></li>
+    <li><a href="#other">Other</a></li> 
+</ul>
+   
+-->
+<div class= "sidebar background card-layout sidebar-move-left" style="width:215px;z-index:2; " id="wikiSidebar">
+  <button onclick="sidebar_close()" class="close-sidebar hide-sidebar closebutton" style="font-size: 18px;">Close x</button>
+  <h5 class="close-sidebar hide-medium hide-small large">Menu</h5>
+    <a class="close-sidebar side-button" href="index.html"><img style="width: 75%; max-width: 125px;top: 0; margin-bottom: 0;" src="img/nrglogo.png"></a>    
+    <a class="close-sidebar side-button buttonsize" href="javascript:void(0)">Github</a>
+    <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Scouting App</a>
+    <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Swerve Drive Summer Project</a>
+    <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Machine Vision</a>  
+    <a class="close-sidebar side-button  buttonsize" href="javascript:void(0)">Community Contributions</a>
+    <a class="close-sidebar side-button  buttonsize" href="blog.html">Blog</a>      
+    
+</div>
+
+<div class="main" id="Content" style="margin-left: 215px;">
+
+<div class="head">
+  <button class="headbutton head " onclick="sidebar_open()" style="font-size: 24px">&#9776;</button>
+  <div class="w3-container">
+    <h2 style="color: #ffffff;margin-left: 5px;">NRG 948 Wiki</h2>
+  </div>
+</div>
+
+    <body>
+        
+<!--
+      <div class="sidenav">
+       <a href="index.html"><img style="width: 10%; position: fixed; top: 0;" src="img/nrglogo.png"></a>
+        <a href="#Robotdocs">Robot Documentation</a> 
+          <a href="index.html"><img style="width: 15%; max-width: 125px; position: fixed; top: 0; margin-bottom: 0;" src="img/nrglogo.png"></a>
+        <a href="#git">Git</a>
+        <a href="#scouting">Scouting App for iOS and Android</a>
+        <a href="#vision">Machine Vision for Robot</a>
+        <a href="swerve">Swerve Drive Summer Project</a>
+        <a href="#community">Community Contributions</a>
+      </div>
+-->
+
+      
+
+      <div onclick="sidebar_close()">
+        <h1 style= "text-align: center; margin-top 2%;">Using This Page</h1>
+          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "git.html" style="color:black;">Git</a>
+          </h2>
+          <h3 style="margin: 1% 1% 0% 2%">
+            *Explore* our different projects from the scouting app to our ML based tracking. Download the final product and spread it to other robotics teams *lol edits needed*
+          </h3>
+          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "scouting.html" style="color:black;">Scouting App for iOS and Android</a>
+          </h2>
+          <h3 style="margin: 1% 1% 0% 2%">
+            *IT ppl need to add stuff*
+          </h3>
+          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "MV.html" style="color:black;">Machine Vision for Robot</a>
+          </h2>
+          <h3 style="margin: 1% 1% 0% 2%">
+            *Sourish will explain*
+          </h3>
+          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "swerve.html" style="color:black;">Swerve Drive Summer Project</a>
+          </h2>
+          <h3 style="margin: 1% 1% 0% 2%">
+            *Designs, evolution* , *by summer proj. participants*
+          </h3>
+          <h2 style="margin-left: 7%;text-decoration: underline"><a href = "comm.html" style="color:black;">Community Contributions</a>
+          </h2>
+          <h3 style="margin: 1% 1% 0% 2%">
+            What Have we done to help our area - Business team
+          </h3>
+          <button  onclick="window.location.href='contact.html'" style="text-decoration: none; color: black; padding: 5px; border-radius: 10px; display:inline-block">Click here if you like to sponsor us</button>
+      </div>
+        
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="smoothscroll.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 500);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+        <script>
+function sidebar_open() {
+    document.getElementById("wikiSidebar").style.display = "block";
+}
+function sidebar_close() {
+    document.getElementById("wikiSidebar").style.display = "none";    
+}
+</script>
+    </body>
+    </html>
