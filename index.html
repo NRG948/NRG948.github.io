@@ -1,266 +1,96 @@
 <!DOCTYPE HTML>
 <html>
-
+<style>
+	@font-face{
+		font-family: Hewitt;
+		src: url("font/cooperhewitt-light.otf");
+	}
+	img {
+		margin-top: 20%;
+	}
+/*	* {
+		font-family: Hewitt;
+	}  */
+   /*
+   .tab button:hover {
+		background-color: #ddd;
+	}
+    .tab {
+		overflow: hidden;
+		border: 2px solid #ffffff;
+		background-color: #f1f1f1;
+    }
+    .tablinks{
+        font-size:150%
+    }
+    .tab button.active {
+		background-color: #ccc;
+    }
+    .tab button {
+		background-color: inherit;
+		float: right;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 28px 32px;
+		transition: 0.7s;
+    }
+	*/
+	.header {
+		color: rgba(255, 255, 255, 0.4);
+		font-size: 4em;
+		text-align: center;
+		margin-top: 15%;
+	}
+	body {
+		background-image: url("img/test.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.logo {
+		text-align: center;
+		margin-top: 16%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>NRG</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/nrglogo.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>NRG</title>
 </head>
-  
 
-<table class="topnav bignav" class="whitespace" style="margin: 0; padding: 0; color: white;background-color: #ffffff;position: fixed;top:0;width: auto;width:100%;">
-        <tr style="margin: 0; padding: 0;background-color: #ffffff; height: 60px;width: 100%;">
-        <th style="padding:0px 0px 0px 10px; background-color: #ffffff; width: 10%;">
-            <div style="width: 10%;background-color: #ffffff;">
-                <a href=#home>
-            <img src="img/nrglogo.png" style="max-height: 60px; position: fixed;top:0;background-color: #ffffff;margin:0; left:1;">
-                    </a>
-                </div>
-        </th>
-    <th style="width: 80%;margin: 0;top: 0;">
-        <div style="overflow-x: auto;color: black;top: 0; position: fixed;width: 80%;">
-<ul  class="nav" id="nav"  >
-<!--    <li style="padding-left: 10px; margin-left: 10px; margin-right: 15px; padding-right: 10px;"><a href="#home">Home</a></li>-->
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#aboutus">Our Mission</a></li>
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#sponsors">Sponsors</a></li>
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#photos">Photos</a></li>
-    <li style="padding-right: 0px; padding-left: 0; overflow-x: auto;"><a href="wiki.html">Wiki</a></li>
-  <!---  <li><a href="#other">Other</a></li> --->
-</ul>
-            </div>
-        </th>
-            
-        <th style="padding:0px 0px 0px 0px;background-color: #ffffff; right:0;top: 0;width: auto;">
-            <div style="background-color: #ffffff; ">             
-            <button onclick="window.location.href='contact.html'" 
-            class = "sponsorus">Donate</button>
-                   
-                </div>
-        </th>
-    </tr>
-    </table>
-<table class="topnav smallnav" class="whitespace" style="margin: 0; padding: 0; color: white;background-color: #ffffff;position: fixed;top:0;width: auto;width:100%;">
-        <tr style="margin: 0; padding: 0;background-color: #ffffff; height: 60px;width: 100%;">
-        <th style="padding:0px 0px 0px 10px; background-color: #ffffff; width: 15%;">
-            <div style="width: 15%;background-color: #ffffff;">
-                <a href=#home>
-            <img src="img/nrglogo.png" style="max-height: 60px; position: fixed;top:0;background-color: #ffffff;margin:0; left:1;">
-                    </a>
-                </div>
-        </th>
-    <th style="width: 80%;margin: 0;top: 0;right: 0">
-        <div style="overflow-x: auto;color: black;top: 0; position: fixed;width: 80%;right: 0">
-<ul  class="nav" id="nav"  >
-<!--    <li style="padding-left: 10px; margin-left: 10px; margin-right: 15px; padding-right: 10px;"><a href="#home">Home</a></li>-->
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#aboutus">Our Mission</a></li>
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#sponsors">Sponsors</a></li>
-    <li style="padding-left: 0;overflow-x: auto;"><a href="#photos">Photos</a></li>
-    <li style="padding-left: 0px;overflow-x: auto;"><a href="wiki.html">Wiki</a></li>
-    <li style="padding-right: 0px;padding-left: 0; overflow-x: auto;"><a href="# FIX THIS">Donate</a></li>
-  <!---  <li><a href="#other">Other</a></li> --->
-</ul>
-            </div>
-        </th>
-            
-<!--
-        <th style="padding:0px 0px 0px 0px;background-color: #ffffff; right:0;top: 0;width: auto;">
-            <div style="background-color: #ffffff; ">             
-            <button onclick="window.location.href='contact.html'" 
-            class = "sponsorus">Donate</button>
-                   
-                </div>
-        </th>
--->
-    </tr>
-    </table>
+	<!-- Navigation Bar -->
+	<!--
+	<div class="sticky">
+		<div class="tab">
+			<a href="index.html"><img src="img/testlogo.png" style="margin-left: 2%; width:5%; margin-top: 1.5%"></a>
+			<button class="tablinks" onclick="window.location.href='test.html'">Calendar</button>
+			<button class="tablinks" onclick="">Photos</button>
+			<button class="tablinks" onclick="">Registration</button>
+			<button class="tablinks" onclick="">About Us</button>
+			<button class="tablinks navtest" onclick="">Home</button>
+		</div>
+	</div>
+	-->
 
+	<!-- Dropdown Nav Bar -->
+	<!-- <ul>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbutton"><img src="img/nav.png" width="100%"></a>
+			<div class="dropdown-content">
+				<a href="#">Home</a>
+				<a href="#">Photos</a>
+				<a href="#">Registration</a>
+				<a href="#">About Us</a>
+			</div>
+		</li>
+	</ul> -->
 
-<body>
-    <div class="container">
- <div class="slide show" style="background-image: url('img/Hbackindex.jpeg');"></div>
-    <div class="slide" style="background-image: url('img/27590167508_918feb01bc_o%20main.jpeg');"></div>
-    <div class="slide" style="background-image: url('img/doran+and+torrey.jpg');"></div>
-    </div>
-<!--    <p  id ="home" style="display: none;">s</p>-->
-    <div class="header" id = "home" style="height: 100%; display:grid;">
-        <h1 class="NRG">Newport Robotics Group</h1>
-    </div>
-      
-    <div class="firsttest" style=" display: block;padding: 0px 10px 0px 10px;">
-        <h2 class="firsttest whitespace" id="aboutus" style ="text-align:center;font-family: Hewitt;font-size:50px; margin: 0px 0px 0px 0px; padding-top: 5%" >Our Mission</h2>
-        <h1 class="whitespace" style="display: block; margin-bottom: 0px; text-align: center; font-weight: 500;">
-            The Newport Robotics Group (NRG) 948 is FIRST Robotics team based in Newport High School in Bellevue, Washington. Our mission is to teach students skills essential in their future careers. In particular, we have cultivated an inclusive environment that encourages students to lead and collaborate through our shared  passion for robots.  From ten students huddled in a garage to over 100 members in our own facility, we continue to unite our members, local teams, and our Bellevue community through STEM.
-        </h1>
-        <hr> 
-    </div>
-<!--
-    </div>
-        <div style="min-height: 25%; min-width: 100%;display:block;"></div>
--->
-    <div class="whitespace" style="padding: 0px 10px 0px 10px;">
-        <h2 id="sponsors" class="whitespace" style ="text-align:center;font-family: Hewitt;font-size:50px; padding: 10px 0px 0px 10px; margin-bottom: 0px; margin-top: 0px;" >Sponsors</h2>
-        <h1 class="whitespace" style="display: block;text-align: center; font-weight: 500; padding: 2px 7px 0px 7px;"> We want to thank our all of sponsors for their continued support of the Newport Robotics Group. Their commitment to this team has enabled students to engage in real world problem solving and learn how to cooperate as they explore science, technology, engineering, and mathematics firsthand. NRG would not be such a thriving and successful community without the generosity our sponsors.</h1>
-        <div class="whitespace firsttest" style="text-align: center;"><button onclick="window.location.href='contact.html'" 
-            class = "sponsorus">Click here if you like to sponsor us</button></div>
-                <imgdiv class="whitespace" align="center">
-            <a href="https://www.microsoft.com/en-us/philanthropies/default.aspx" target="_blank" rel="noopener noreferrer">
-      <img src='img/microsoft_logo.png'  alt="Microsoft">
-                </a>
-            <a href="http://google.org" target="_blank"rel="noopener noreferrer">
-        <img class="Google" src='img/google_logo.svg'  alt="Google">
-                </a>
-            <a href="http://www.intellectualventures.com/" target="_blank"rel="noopener noreferrer">
-        <img src='img/IntellectualV_logo.jpg' alt="Intellecutal Ventures">
-                </a>
-         <!---  Temp HTC Website and logo, need to ask Business for real one --->
-        <a href="http://blog.htc.com" target="_blank"rel="noopener noreferrer">
-      <img src='img/htcvive_logo_temp.png' alt="HTC">
-                </a>
-            <a href="https://f5.com/about-us/corporate-social-responsibility"   rel="noopener noreferrer" target="_blank">
-      <img class="small" src='img/f5_logo.png'  alt="F5 Networks">
-                </a>
-<!--             margin-left:4.25%;margin-right: 4.25%;-->
-            <a href="http://www.factoriaortho.com" target="_blank"rel="noopener noreferrer" >
-        <img  class="small" src='img/fidler_logo.jpeg'  alt="Dr. Brett Fidler">
-                </a>
-            <a href="http://www.mjrdevelopment.com/" target="_blank"rel="noopener noreferrer" >
-        <img class="small" src='img/mjr_logo.png' alt="MJR Development">
-                </a>
-        <img src='img/quick_logo.jpg' style=" margin-right: auto; " alt="Quick Family Foundation">
-            <a href="https://www.firstwa.org/" target="_blank"rel="noopener noreferrer">
-      <img src='img/FirstWashington_logo.png'  alt="First Washington">
-                </a>
-            <a href="https://www.xerox.com/corporate-citizenship/2017/community-involvement/xerox-foundation.html" target="_blank"rel="noopener noreferrer">
-      <img src='img/xerox_logo.png'  alt="Xerox">
-                </a>
-            <a href="https://www.boeing.com/principles/community-engagement.page" target="_blank">
-        <img src='img/boeing_logo.png'  alt="Boeing">
-                </a>
-            </imgdiv>
-        </div> 
-      
-<!--        <h2 class="whitespace" style="display: grid;text-align: center; font-weight: 500; padding: 2px 7px 0px 7px;">-->
-            
-<!--        <img src="img/27590167508_918feb01bc_o.jpg" style=" display: block; height: 500%;"> -->
-      <hr class="firsttest"> 
-        <div class="whitespace" style="padding: 0px 10px 0px 10px;display: block;">
-    <h2 class="firsttest" id="photos" style ="text-align:center;font-family: Hewitt;font-size:50px; margin: 0px 0px 0px 0px; padding-top: 0%; display: block;">Photos</h2>
-<!--
-        <div class="firsttest whitespace">
-        <ul id="slides" class="whitespace firsttest" style="display:grid;">
-            <li class="slidetest showing"style="display:grid;"><img src="img/Hbackindex.jpeg"></li>
-            <li class="slidetest" style="display:grid;"><img src="img/27590167508_918feb01bc_o%20main.jpeg"> </li>
-        </ul>
-            </div>
--->
-            </div>
-<!--
-        <h1 class="whitespace" style="display: grid; margin-bottom: 0px; text-align: center;">
-            <div id="flickrembed_1"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1; margin: 0px 5px 0px 5px;"><a rel="nofollow" href="https://s3.amazonaws.com/workingvouchers/clarks/index.html" rel="noopener noreferrer">https://s3.amazonaws.com/workingvouchers/clarks/index.html</a></div>
-        </h1>
--->
-    
-    <footer style="padding: 10px 0px 10px 0px; background-color: rgba(255, 0, 0, 1) ; border-top: 5px; border-top-color: gray; border-top-style: solid; display: grid; margin: 0; width: 100%;">
-        <table class="large-screen-view" style="width: 100%; margin: none;">
-            <tr>
-                <th class="footer-col" style="margin-left: 5px; font-weight: 1000; text-align: left;">&copy; Newport Robotics 948</th>
-                <th class="footer-col" style="margin: 0px; font-weight: 1000; font-size: 20px; text-align: center; margin-top: 0;margin-bottom: 0px"><a href="https://www.instagram.com/nrg_948/" rel="noopener noreferrer" target="_blank"><img src="img/insta_logo.png" alt="Instagram" style="width: 10%; margin: 0px;padding: 0px; top: 50%;max-width: 30px" ></a>
-                <a href="https://twitter.com/NRG948" rel="noopener noreferrer" target="_blank"><img src="img/twitter_logo.png" alt="Twitter" style="width: 10%; margin-left: 10px;padding: 0px; top: 50%; max-width: 30px"></a>
-                <a href="https://www.facebook.com/FIRSTnrg948/" rel="noopener noreferrer" target="_blank"><img src="img/facebook_logo.svg" alt="Facebook" style="width: 10%; margin-left: 10px;padding: 0px; top: 50%;max-width: 30px"></a></th>
-                <th class="footer-col" style="margin-right: 5px; text-align:right;"><a style="font-weight: 1000; text-decoration: none;color: white;" href="contact.html">Contact Us</a></th>
-<!--                <th style="margin: 2px 2px 5px 2px; font-weight: 1000; font-size: 20px;text-align: right;">Website by NRG IT</th>-->
-            </tr>
-        </table>
-        <table class="small-screen-view" style="width: 100%">
-            <tr >
-                <th class="footer-col" style="margin: 2px 2px 5px 2px; font-weight: 1000; font-size: 20px; text-align: left;">NRG 948</th>
-                <th class="footer-col" style="margin: 0px; font-weight: 1000; font-size: 20px; text-align: center; margin-top: 0;margin-bottom: 0px"><a href="https://www.instagram.com/nrg_948/" rel="noopener noreferrer" target="_blank"><img src="img/insta_logo.png" alt="Instagram" style="width: 20%; margin: 0px;padding: 0px; top: 50%;" ></a>
-                <a href="https://twitter.com/NRG948" rel="noopener noreferrer" target="_blank"><img src="img/twitter_logo.png" alt="Instagram" style="width: 20%; margin-left: 10px;padding: 0px; top: 50%;"></a>
-                <a href="https://www.facebook.com/FIRSTnrg948/" rel="noopener noreferrer" target="_blank"><img src="img/facebook_logo.svg" alt="Instagram" style="width: 20%; margin-left: 10px;padding: 0px; top: 50%;"></a></th>
-                <th style="margin: 2px 2px 5px 2px; text-align: right;"><a style="font-weight: 1000; font-size: 20px; text-decoration: none;color: white;" href="contact.html">Contact</a></th>
-<!--                <th style="margin: 2px 2px 5px 2px; font-weight: 1000; font-size: 20px;text-align: right;">By NRG IT</th>-->
-            </tr>
-        </table>
-<!--
-         <p style="margin: 2px 5px 5px 5px; font-weight: 1000; font-size: 20px; float: left;">NRG 948</p>
-        <a href="contact.html"  style="margin: 2px 5px 5px 5px; font-weight: 1000; font-size: 20px; text-align: center;">Contact Us</a>
-        <span style="margin: 2px 5px 5px 5px; font-weight: 1000; font-size: 20px; float: right;">2018</span>
--->
-    </footer>
-    
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="smoothscroll.js"></script>
-<script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_1&source=flickr&layout=responsive&input=www.flickr.com/photos/nrg948/albums/72157665742389927&sort=0&by=album&theme=slider&scale=fill&limit=20&skin=default-light&autoplay=true'></script><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})}), {capture: true,passive:true}}</script>
-    <script>
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 500);
-            return false;
-          }
-        }
-      });
-    });</script>
-
-   <script>
-
-    function cycleBackgrounds() {
-    	var index = 0;
-
-    	$imageEls = $('.container .slide'); // Get the images to be cycled.
-
-    	setInterval(function () {
-    		// Get the next index.  If at end, restart to the beginning.
-    		index = index + 1 < $imageEls.length ? index + 1 : 0;
-    		// Show the next image.
-    		$imageEls.eq(index).addClass('show');
-    		// Hide the previous image.
-    		$imageEls.eq(index - 1).removeClass('show');
-
-    	}, 2000);
-    };
-
-    // Document Ready.
-    $(function () {
-    	cycleBackgrounds();
-    });
-
-    </script>
-    <script>
-    document.addEventListener('wheel', (evt) =>  {
-  capture: true,
-  passive: true
-})
-    </script>
-    <script>
-    var slides = document.querySelectorAll('#slides .slidetest');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slidetest';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slidetest showing';
-}
-
-    </script>
-
-</body>
-
-<!---
+	<!-- Main Header -->
 	<div class="header">
 		<h1>Newport Robotics Group</h1>
         <h2 style="color: black">Work in Progress...</h2>
 	</div>
-master
---->
 </html>
