@@ -213,26 +213,13 @@ headbutton a{
     .hide-sidebar{
         display: none;
     }
+    
 /*
     .main {
     margin-left: 200px;
         }
 */
-    .sidebar-move-left{
-        position:relative;
-        animation:animateleft 0.4s;
-    }
-    @keyframes animateleft{
-        from{
-            left:-300px;
-            opacity:0;
-        } 
-        to
-        {
-            left:0;
-            opacity:1;
-        }
-    }
+
 /*
     .main{
     transition:margin-left .4s;
@@ -259,7 +246,7 @@ headbutton a{
     background-color:#fff;
     position:fixed!important;
     z-index:1;
-    display: block;
+    display: none;
     overflow:auto;
 }
 
@@ -299,13 +286,11 @@ headbutton a{
         }
     }
 
-div > a:hover{
+div > a:hover, .headbutton:hover, .closebutton:hover{
     background-color: grey;
 }
 
-.headbutton:hover{
-    background-color: grey;
-}
+
 
 .large{
     font-size: 20px;
@@ -313,3 +298,6 @@ div > a:hover{
     margin: 10px 0 5 0;
     font-weight: normal;
 }
+
+
+w3-sidebar w3-bar-block w3-collapse w3-white w3-card w3-animate-left

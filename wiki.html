@@ -6,7 +6,7 @@
 <!--     <link rel="stylesheet" type="text/css" href="imported.css">-->
     <title>NRG Wiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/wiki_logo.png">
+    <link rel="icon" href="img/nrglogo.png">
     <link rel="stylesheet" type="text/css" href="wiki.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -25,8 +25,8 @@
 </ul>
    
 -->
-<div window_width() class= "sidebar background card-layout sidebar-move-left" style="width:215px;z-index:2;display: " id="wikiSidebar">
-  <button onclick="sidebar_close()" class="close-sidebar hide-sidebar" style="font-size: 18px;">Close x</button>
+<div class= "sidebar background card-layout sidebar-move-left" style="width:215px;z-index:2; " id="wikiSidebar">
+  <button onclick="sidebar_close()" class="close-sidebar hide-sidebar closebutton" style="font-size: 18px;">Close x</button>
   <h5 class="close-sidebar hide-medium hide-small large">Menu</h5>
     <a class="close-sidebar side-button" href="index.html"><img style="width: 75%; max-width: 125px;top: 0; margin-bottom: 0;" src="img/nrglogo.png"></a>    
     <a class="close-sidebar side-button buttonsize" href="javascript:void(0)">Github</a>
@@ -41,7 +41,7 @@
 <div class="main" id="Content" style="margin-left: 215px;">
 
 <div class="head">
-  <button class="headbutton head sidebar-move-left" onclick="sidebar_open()" style="font-size: 24px">&#9776;</button>
+  <button class="headbutton head " onclick="sidebar_open()" style="font-size: 24px">&#9776;</button>
   <div class="w3-container">
     <h2 style="color: #ffffff;margin-left: 5px;">NRG 948 Wiki</h2>
   </div>
@@ -91,8 +91,9 @@
           <h3 style="margin: 1% 1% 0% 2%">
             What Have we done to help our area - Business team
           </h3>
+          <button  onclick="window.location.href='contact.html'" style="text-decoration: none; color: black; padding: 5px; border-radius: 10px; display:inline-block">Click here if you like to sponsor us</button>
       </div>
-        </div>
+        
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="smoothscroll.js"></script>
